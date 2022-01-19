@@ -1,0 +1,17 @@
+global using MediatR;
+global using Microsoft.Extensions.Logging;
+global using Code4Nothing.Application.Common.Interfaces;
+global using Code4Nothing.Application.Common.Models;
+global using Code4Nothing.Domain.Common.Bases;
+global using System.Reflection;
+global using Microsoft.EntityFrameworkCore;
+global using Code4Nothing.Application.Common.Interfaces;
+global using Code4Nothing.Domain.Common.Interfaces;
+global using Code4Nothing.Domain.TodoItem.Entities;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Code4Nothing.Infrastructure.Persistence;
+global using Code4Nothing.Infrastructure.Persistence.Repositories;
+global using Code4Nothing.Infrastructure.Services;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Configuration;
+global using Code4Nothing.Domain.TodoItem.Enums;

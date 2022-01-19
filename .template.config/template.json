@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Code4Nothing",
+  "classifications": [],
+  "name": "Code4Nothing Clean Architecture Solution Template",
+  "identity": "Code4Nothing.CleanArchitecture.Template",
+  "groupIdentity": "Code4Nothing.CleanArchitecture.Template",
+  "shortName": "ca-c4n",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Code4Nothing",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "exclude": [
+        "**/README.md",
+        "**/nuget.config",
+        "**/LICENSE",
+        "**/.gitattributes",
+        "**/*.nupkg",
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        ".template.config/**/*",
+        ".vs/**/*",
+        ".vscode/**/*",
+        ".idea/**/*",
+        "**/*.filelist",
+        "**/*.user",
+        "**/*.lock.json",
+        "**/.git/**",
+        "**/.github/**",
+        "*.nuspec",
+        "**/node_modules/**"
+      ]
+    }
+  ],
+  "symbols":{
+    "skipRestore": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "If specified, skips the automatic restore of the project on create.",
+      "defaultValue": "false"
+    }
+  },
+  "postActions": [
+    {
+      "condition": "(!skipRestore)",
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        { "text": "Run 'dotnet restore'" }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }]
+}

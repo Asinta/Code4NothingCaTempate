@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Code4Nothing.CleanArchitecture.Template</id>
+        <version>0.1.0</version>
+        <description>
+            Create basic .NET 6 solution and projects based on clean architecture principle
+        </description>
+        <authors>Code4Nothing</authors>
+        <packageTypes>
+            <packageType name="Template" />
+        </packageTypes>
+    </metadata>
+</package>

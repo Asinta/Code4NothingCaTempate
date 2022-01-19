@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dotnet ef migrations add $1 -p src/Code4Nothing.Infrastructure/Code4Nothing.Infrastructure.csproj -s src/Code4Nothing.Api/Code4Nothing.Api.csproj
