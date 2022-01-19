@@ -8,7 +8,6 @@ global using System.IdentityModel.Tokens.Jwt;
 global using Code4Nothing.Infrastructure.Persistence;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Extensions.Diagnostics.HealthChecks;
-global using Microsoft.OpenApi.Models;
 global using Polly;
 global using Code4Nothing.Api.Middlewares;
 global using System.Security.Claims;

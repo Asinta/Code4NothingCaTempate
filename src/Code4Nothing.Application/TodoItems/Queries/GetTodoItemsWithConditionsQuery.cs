@@ -25,7 +25,7 @@ public class GetTodoItemsWithConditionQueryHandler : IRequestHandler<GetTodoItem
     {
         return await _repository
             .GetAsQueryable(x => (!request.Done.HasValue || x.Done == request.Done)
-                                 && (string.IsNullOrEmpty(request.Title) || x.Title.Trim().ToLower().Contains(request.Title!.ToLower())))
+                                 && (string.IsNullOrEmpty(request.Title) || x.Title!.Trim().ToLower().Contains(request.Title!.ToLower())))
             .ProjectTo<TodoItemDto>(_mapper.ConfigurationProvider)
             .PaginatedListAsync(request.PageNumber, request.PageSize);
     }

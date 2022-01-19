@@ -3,7 +3,7 @@ namespace Code4Nothing.Domain.TodoItem.Entities;
 public class TodoItem : AuditableEntity, IEntity<Guid>, IHasDomainEvent, IAggregateRoot
 {
     public Guid Id { get; set; }
-    public string Title { get; set; }
+    public string? Title { get; set; }
     public PriorityLevel Priority { get; set; }
     public Colour Colour { get; set; } = Colour.White;
 

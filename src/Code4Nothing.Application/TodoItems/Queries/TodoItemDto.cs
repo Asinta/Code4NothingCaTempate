@@ -8,7 +8,7 @@ public record TodoItemDto : IMapFrom<TodoItem>
     public string? Title { get; set; }
     public bool Done { get; set; }
     public int Priority { get; set; }
-    public string Colour { get; set; }
+    public string? Colour { get; set; }
     
     public void Mapping(Profile profile)
     {

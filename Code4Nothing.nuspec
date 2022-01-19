@@ -3,12 +3,21 @@
     <metadata>
         <id>Code4Nothing.CleanArchitecture.Template</id>
         <version>0.1.0</version>
+        <authors>Code4Nothing</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <license type="expression">MIT</license>
+        <projectUrl>https://github.com/Asinta/Code4NothingCaTempate</projectUrl>
+        <repository type="git" url="https://github.com/Asinta/Code4NothingCaTempate" branch="main" />
         <description>
             Create basic .NET 6 solution and projects based on clean architecture principle
         </description>
-        <authors>Code4Nothing</authors>
+        <copyright>$copyright$</copyright>
+        <tags>dotnet6 webapi csharp clean-architecture solution template</tags>
         <packageTypes>
             <packageType name="Template" />
         </packageTypes>
     </metadata>
+    <files>
+        <file src="**" exclude="**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store;**\.git\**\*;**\.github\**\*;**\.vs\**\*;**\*LICENSE;**\*.gitattributes;**\*README.md;**\*.gitignore;**\*nuget.config;" target="/content" />
+    </files>
 </package>
